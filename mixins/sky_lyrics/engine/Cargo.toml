@@ -1,0 +1,13 @@
+[package]
+name = "sky-lyrics-engine"
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+description = "Sky Lyrics for Horizon: settings, lyric timing, glyph atlas, text layout and the settings screen, free of Horizon's types"
+publish = false
+
+# Only crates in Horizon's Cargo.lock, by version requirement.
+[dependencies]
+ab_glyph = "0.2.32"
+serde_json = "1.0.151"
+ureq = { version = "2", default-features = false, features = ["tls"] }
